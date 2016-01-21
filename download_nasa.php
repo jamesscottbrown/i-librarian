@@ -568,7 +568,7 @@ if (isset($_SESSION['auth'])) {
 
                     print '<a href="' . htmlspecialchars('http://adsabs.harvard.edu/abs/' . urlencode($bibcode)) . '" target="_blank">NASA ADS</a>';
                     if (!empty($doi))
-                        print ' <b>&middot;</b> <a href="' . htmlspecialchars('http://dx.doi.org/' . urlencode($doi)) . '" target="_blank">Publisher Website</a>';
+                        print ' <b>&middot;</b> <a href="' . htmlspecialchars('http://dx.doi.org/' . urlencode($doi)) . '?redirect=false" target="_blank">Publisher Website</a>';
                     if (!empty($eprintid))
                         print ' <b>&middot;</b> <a href="' . htmlspecialchars("http://arxiv.org/pdf/$eprintid") . '" target="_blank">PDF preprint</a> (ArXiv)';
 
@@ -652,7 +652,7 @@ if (isset($_SESSION['auth'])) {
                     if (!empty($preprint_url))
                         print ' <b>&middot;</b> <a href="' . htmlspecialchars($preprint_url) . '" target="_blank">Preprint</a>';
                     if (!empty($doi))
-                        print ' <b>&middot;</b> <a href="' . htmlspecialchars("http://dx.doi.org/" . urlencode($doi)) . '" target="_blank">Publisher Website</a>';
+                        print ' <b>&middot;</b> <a href="' . htmlspecialchars("http://dx.doi.org/" . urlencode($doi)) . '?redirect=false" target="_blank">Publisher Website</a>';
                     if (!empty($gif_url))
                         print ' <b>&middot;</b> <a href="' . htmlspecialchars($gif_url) . '" target="_blank">Scanned article</a>';
                     if (!empty($eprintid))

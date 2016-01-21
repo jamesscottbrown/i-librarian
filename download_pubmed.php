@@ -562,7 +562,7 @@ if (isset($_SESSION['auth'])) {
                     print '<a href="' . htmlspecialchars('http://www.pubmed.org/' . urlencode($id)) . '" target="_blank">PubMed</a>';
 
                     if (!empty($doi))
-                        print ' <b>&middot;</b> <a href="' . htmlspecialchars('http://dx.doi.org/' . urlencode($doi)) . '" target="_blank">Publisher Website</a>';
+                        print ' <b>&middot;</b> <a href="' . htmlspecialchars('http://dx.doi.org/' . urlencode($doi)) . '?redirect=false" target="_blank">Publisher Website</a>';
 
                     if (!empty($pmcid))
                         print ' <b>&middot;</b> <a href="' . htmlspecialchars('http://www.ncbi.nlm.nih.gov/pmc/articles/' . urlencode($pmcid) . '/pdf/') . '" target="_blank">Full Text PDF</a> (PubMed Central)';

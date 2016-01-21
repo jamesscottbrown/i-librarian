@@ -538,7 +538,7 @@ if (isset($_SESSION['auth'])) {
                     print ' <b>&middot;</b> <a href="' . htmlspecialchars('http://www.ncbi.nlm.nih.gov/pmc/articles/' . urlencode($uid) . '/pdf/') . '" target="_blank">Full Text PDF</a>';
 
                     if (!empty($doi))
-                        print ' <b>&middot;</b> <a href="' . htmlspecialchars('http://dx.doi.org/' . urlencode($doi)) . '" target="_blank">Publisher Website</a>';
+                        print ' <b>&middot;</b> <a href="' . htmlspecialchars('http://dx.doi.org/' . urlencode($doi)) . '?redirect=false" target="_blank">Publisher Website</a>';
 
                     print '</div>';
 

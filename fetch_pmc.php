@@ -349,7 +349,7 @@ if (isset($_GET['id'])) {
 	Full Text PDF</a>';
 
     if (!empty($doi))
-        print ' <b>&middot;</b> <a href="' . htmlspecialchars('http://dx.doi.org/' . urlencode($doi)) . '" target="_blank">Publishers Website</a>';
+        print ' <b>&middot;</b> <a href="' . htmlspecialchars('http://dx.doi.org/' . urlencode($doi)) . '?redirect=false" target="_blank">Publishers Website</a>';
 
     print '<br><button class="save-item"><i class="fa fa-save"></i> Save</button> <button class="quick-save-item"><i class="fa fa-save"></i> Quick Save</button>';
 

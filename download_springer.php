@@ -396,7 +396,7 @@ if (!empty($_GET['action'])) {
                     print " ($year)";
 
                 if (!empty($doi)) {
-                    print ' <br> <a href="' . htmlspecialchars("http://dx.doi.org/" . urlencode($doi)) . '" target="_blank">Publisher Website</a>
+                    print ' <br> <a href="' . htmlspecialchars("http://dx.doi.org/" . urlencode($doi)) . '?redirect=false" target="_blank">Publisher Website</a>
                     &middot; <a href="http://link.springer.com/content/pdf/' . urlencode($doi) . '.pdf" target="_blank">PDF</a>';
                 }
 

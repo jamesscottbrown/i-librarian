@@ -422,7 +422,7 @@ if (isset($_SESSION['auth'])) {
                         print '<div class="authors"><i class="author_expander fa fa-plus-circle"></i> ' . htmlspecialchars($names) . '</div>';
 
                     if (!empty($doi))
-                        print '<a href="' . htmlspecialchars('http://dx.doi.org/' . urlencode($doi)) . '" target="_blank">Publisher Website</a>';
+                        print '<a href="' . htmlspecialchars('http://dx.doi.org/' . urlencode($doi)) . '?redirect=false" target="_blank">Publisher Website</a>';
 
                     print '</div>';
 
@@ -489,7 +489,7 @@ if (isset($_SESSION['auth'])) {
                     print '<b>Full text options:</b><br>';
 
                     if (!empty($doi))
-                        print '<a href="' . htmlspecialchars('http://dx.doi.org/' . urlencode($doi)) . '" target="_blank">Publisher Website</a>';
+                        print '<a href="' . htmlspecialchars('http://dx.doi.org/' . urlencode($doi)) . '?redirect=false" target="_blank">Publisher Website</a>';
 
                     print '<br><button class="save-item">Save</button> <button class="quick-save-item">Quick Save</button>';
 

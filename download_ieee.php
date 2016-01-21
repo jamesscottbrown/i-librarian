@@ -541,7 +541,7 @@ if (isset($_SESSION['auth'])) {
                         print '<a href="' . htmlspecialchars('http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=' . $id) . '" target="_blank">IEEE</a>';
                         
                         if (!empty($doi)) {
-                            print ' <b>&middot;</b> <a href="' . htmlspecialchars("http://dx.doi.org/" . urlencode($doi)) . '" target="_blank">Publisher Website</a>';
+                            print ' <b>&middot;</b> <a href="' . htmlspecialchars("http://dx.doi.org/" . urlencode($doi)) . '?redirect=false" target="_blank">Publisher Website</a>';
                         }
 
                         if (!empty($pdflink)) {
@@ -611,7 +611,7 @@ if (isset($_SESSION['auth'])) {
                         print '<a href="' . htmlspecialchars('http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=' . $id) . '" target="_blank">IEEE</a>';
 
                         if (!empty($doi))
-                            print ' <b>&middot;</b> <a href="' . htmlspecialchars('http://dx.doi.org/' . urlencode($doi)) . '" target="_blank">Publishers Website</a>';
+                            print ' <b>&middot;</b> <a href="' . htmlspecialchars('http://dx.doi.org/' . urlencode($doi)) . '?redirect=false" target="_blank">Publishers Website</a>';
 
                         print '<br><button class="save-item"><i class="fa fa-save"></i> Save</button> <button class="quick-save-item"><i class="fa fa-save"></i> Quick Save</button>';
 

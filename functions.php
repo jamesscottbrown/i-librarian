@@ -2437,7 +2437,7 @@ function show_search_results($result, $select, $shelf_files, $desktop_projects, 
                 }
 
                 if (!empty($paper['doi'])) {
-                    print '<a href="' . htmlspecialchars('http://dx.doi.org/' . urlencode($paper['doi'])) . '" target="_blank">Publisher Website</a> <b style="margin:0 0.5em">&middot;</b> ';
+                    print '<a href="' . htmlspecialchars('http://dx.doi.org/' . urlencode($paper['doi'])) . '?redirect=false" target="_blank">Publisher Website</a> <b style="margin:0 0.5em">&middot;</b> ';
                 }
 
                 if (!empty($other_urls)) {

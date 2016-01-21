@@ -139,7 +139,7 @@ if (isset($_GET['id'])) {
 	Full Text PDF</a> (PubMed Central)';
 
     if (!empty($doi))
-        print ' <b>&middot;</b> <a href="' . htmlspecialchars("http://dx.doi.org/" . urlencode($doi)) . '" target="_blank">Publisher Website</A>';
+        print ' <b>&middot;</b> <a href="' . htmlspecialchars("http://dx.doi.org/" . urlencode($doi)) . '?redirect=false" target="_blank">Publisher Website</A>';
 
     print '<br><button class="save-item"><i class="fa fa-save"></i> Save</button> <button class="quick-save-item"><i class="fa fa-save"></i> Quick Save</button>';
 
